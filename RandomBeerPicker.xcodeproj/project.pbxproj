@@ -17,6 +17,11 @@
 		0EB7C12B2897C2AE000EFF71 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C12A2897C2AE000EFF71 /* SwiftyJSON */; };
 		0EB7C12D2897C2D3000EFF71 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C12C2897C2D3000EFF71 /* BeerViewController.swift */; };
 		0EB7C1302897C982000EFF71 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C12F2897C982000EFF71 /* Kingfisher */; };
+		0EB7C13F28997BD8000EFF71 /* BeerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C13E28997BD8000EFF71 /* BeerSearchViewController.swift */; };
+		0EB7C14128997D27000EFF71 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C14028997D27000EFF71 /* BeerModel.swift */; };
+		0EB7C14328997F26000EFF71 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C14228997F26000EFF71 /* UIViewControllerExtension.swift */; };
+		0EB7C14628998253000EFF71 /* BeerSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C14428998253000EFF71 /* BeerSearchTableViewCell.swift */; };
+		0EB7C14728998254000EFF71 /* BeerSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7C14528998253000EFF71 /* BeerSearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		0EB7C11E2897C10A000EFF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EB7C1242897C202000EFF71 /* BeerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerResponse.swift; sourceTree = "<group>"; };
 		0EB7C12C2897C2D3000EFF71 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		0EB7C13E28997BD8000EFF71 /* BeerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSearchViewController.swift; sourceTree = "<group>"; };
+		0EB7C14028997D27000EFF71 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		0EB7C14228997F26000EFF71 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		0EB7C14428998253000EFF71 /* BeerSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSearchTableViewCell.swift; sourceTree = "<group>"; };
+		0EB7C14528998253000EFF71 /* BeerSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerSearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +76,16 @@
 			children = (
 				0EB7C1102897C108000EFF71 /* AppDelegate.swift */,
 				0EB7C1122897C108000EFF71 /* SceneDelegate.swift */,
-				0EB7C12C2897C2D3000EFF71 /* BeerViewController.swift */,
-				0EB7C1162897C108000EFF71 /* Main.storyboard */,
+				0EB7C14028997D27000EFF71 /* BeerModel.swift */,
 				0EB7C1242897C202000EFF71 /* BeerResponse.swift */,
-				0EB7C1192897C10A000EFF71 /* Assets.xcassets */,
+				0EB7C1162897C108000EFF71 /* Main.storyboard */,
 				0EB7C11B2897C10A000EFF71 /* LaunchScreen.storyboard */,
+				0EB7C14528998253000EFF71 /* BeerSearchTableViewCell.xib */,
+				0EB7C12C2897C2D3000EFF71 /* BeerViewController.swift */,
+				0EB7C13E28997BD8000EFF71 /* BeerSearchViewController.swift */,
+				0EB7C14428998253000EFF71 /* BeerSearchTableViewCell.swift */,
+				0EB7C14228997F26000EFF71 /* UIViewControllerExtension.swift */,
+				0EB7C1192897C10A000EFF71 /* Assets.xcassets */,
 				0EB7C11E2897C10A000EFF71 /* Info.plist */,
 			);
 			path = RandomBeerPicker;
@@ -147,6 +162,7 @@
 				0EB7C11D2897C10A000EFF71 /* LaunchScreen.storyboard in Resources */,
 				0EB7C11A2897C10A000EFF71 /* Assets.xcassets in Resources */,
 				0EB7C1182897C108000EFF71 /* Main.storyboard in Resources */,
+				0EB7C14728998254000EFF71 /* BeerSearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +177,10 @@
 				0EB7C1112897C108000EFF71 /* AppDelegate.swift in Sources */,
 				0EB7C1252897C202000EFF71 /* BeerResponse.swift in Sources */,
 				0EB7C1132897C108000EFF71 /* SceneDelegate.swift in Sources */,
+				0EB7C13F28997BD8000EFF71 /* BeerSearchViewController.swift in Sources */,
+				0EB7C14328997F26000EFF71 /* UIViewControllerExtension.swift in Sources */,
+				0EB7C14128997D27000EFF71 /* BeerModel.swift in Sources */,
+				0EB7C14628998253000EFF71 /* BeerSearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
