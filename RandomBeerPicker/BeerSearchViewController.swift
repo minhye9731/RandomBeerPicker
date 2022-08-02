@@ -13,7 +13,6 @@ import Kingfisher
 
 class BeerSearchViewController: UIViewController {
 
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
     
     var list: [BeerModel] = []
@@ -25,7 +24,6 @@ class BeerSearchViewController: UIViewController {
         
         searchTableView.delegate = self
         searchTableView.dataSource = self
-        searchBar.delegate = self
         
         searchTableView.register(UINib(nibName: BeerSearchTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: BeerSearchTableViewCell.reuseIdentifier)
         
@@ -41,10 +39,6 @@ class BeerSearchViewController: UIViewController {
 
     // MARK: - 맥주 API 연결
     func requestBeerData() {
-        
-        list.removeAll()
-        
-        // 25개니까 하나하나 꺼내서 배열에 추가해줘야지
         
         let url = "https://api.punkapi.com/v2/beers"
         AF.request(url, method: .get).validate().responseJSON { response in
@@ -116,12 +110,4 @@ extension BeerSearchViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-}
-
-// MARK: - searchbar 함수
-extension BeerSearchViewController: UISearchBarDelegate {
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        // 맥주 이름 검색시 검색된 리스트가 나타나도록
-    }
 }

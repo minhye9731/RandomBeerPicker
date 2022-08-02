@@ -87,28 +87,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-gj-5MR">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CbG-jQ-dWj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rUa-4N-N0Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CbG-jQ-dWj" firstAttribute="leading" secondItem="rUa-4N-N0Q" secondAttribute="leading" id="3SM-1O-P89"/>
+                            <constraint firstItem="i6d-gj-5MR" firstAttribute="top" secondItem="rUa-4N-N0Q" secondAttribute="top" id="7TN-TU-v54"/>
                             <constraint firstItem="i6d-gj-5MR" firstAttribute="leading" secondItem="rUa-4N-N0Q" secondAttribute="leading" id="9tZ-9N-1qM"/>
                             <constraint firstItem="rUa-4N-N0Q" firstAttribute="trailing" secondItem="i6d-gj-5MR" secondAttribute="trailing" id="LaE-rV-1bY"/>
                             <constraint firstItem="rUa-4N-N0Q" firstAttribute="bottom" secondItem="i6d-gj-5MR" secondAttribute="bottom" id="RCP-6N-qz2"/>
-                            <constraint firstItem="CbG-jQ-dWj" firstAttribute="top" secondItem="rUa-4N-N0Q" secondAttribute="top" id="gZx-SW-yHA"/>
-                            <constraint firstItem="i6d-gj-5MR" firstAttribute="top" secondItem="CbG-jQ-dWj" secondAttribute="bottom" id="oK6-ud-Unr"/>
-                            <constraint firstItem="CbG-jQ-dWj" firstAttribute="trailing" secondItem="rUa-4N-N0Q" secondAttribute="trailing" id="wIa-mO-oLS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="CbG-jQ-dWj" id="r9x-zY-Qt2"/>
                         <outlet property="searchTableView" destination="i6d-gj-5MR" id="9IO-NL-CfW"/>
                     </connections>
                 </viewController>
